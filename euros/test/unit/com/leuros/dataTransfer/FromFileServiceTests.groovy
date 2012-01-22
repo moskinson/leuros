@@ -11,7 +11,9 @@ import org.junit.*
 @TestFor(FromFileService)
 class FromFileServiceTests {
 
-    void testSomething() {
-        fail "Implement me"
+    void testReadAFile() {
+       
+		
+		service.readingFile();
     }
 }
