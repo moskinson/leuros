@@ -2,16 +2,20 @@ package com.leuros
 
 class readFile {
 
-	def File myFile
-	def myFileDirectory = "\\Users\\Mosca\\desarrollo\\euromillon\\leuros\\ficheros-resultados"
+	File myFile
+	def myFileDirectory =  System.getProperty("user.dir") + "//ficheros-resultados//"
 	def myFileName = "resultadosSorteos.txt"
-	
-	
-	def pintaLineas(){
+
+	def pintaLineas() {
 		myFile = new File(myFileDirectory + myFileName)
-		printFileLine = { println "File line: " + it }
+		def List lineas = []
+		def printFileLine = { 
+			//system.println("File line: " + it)
+			lineas.add(it)
+		 }
 		
-		myFile.eachLine( printFileLine )
+		myFile.each( printFileLine )
+		return lineas
 	}
 
 	

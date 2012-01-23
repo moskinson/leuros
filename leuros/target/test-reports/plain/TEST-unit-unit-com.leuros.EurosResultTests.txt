@@ -1,0 +1,10 @@
+Testsuite: com.leuros.EurosResultTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.536 sec
+------------- Standard Output ---------------
+--Output from testOne--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testOne--
+------------- ---------------- ---------------
+
+Testcase: testOne took 0.531 sec

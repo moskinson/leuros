@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="MacMosca.local" name="com.leuros.EurosResultControllerTests" tests="1" time="1.843" timestamp="2012-01-22T15:25:51">
+  <properties />
+  <testcase classname="com.leuros.EurosResultControllerTests" name="testloadData" time="1.641" />
+  <system-out><![CDATA[--Output from testloadData--
+]]></system-out>
+  <system-err><![CDATA[--Output from testloadData--
+]]></system-err>
+</testsuite>

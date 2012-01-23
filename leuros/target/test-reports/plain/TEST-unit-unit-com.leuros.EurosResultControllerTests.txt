@@ -1,0 +1,10 @@
+Testsuite: com.leuros.EurosResultControllerTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.843 sec
+------------- Standard Output ---------------
+--Output from testloadData--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testloadData--
+------------- ---------------- ---------------
+
+Testcase: testloadData took 1.642 sec

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="MacMosca.local" name="com.leuros.EurosResultServiceTests" tests="1" time="0.534" timestamp="2012-01-22T15:25:52">
+  <properties />
+  <testcase classname="com.leuros.EurosResultServiceTests" name="testReadFile" time="0.345">
+    <error message="No signature of method: com.leuros.EurosResult.save() is applicable for argument types: () values: []&#xa;Possible solutions: save(), save(boolean), save(java.util.Map), wait(), any(), wait(long)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: com.leuros.EurosResult.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), any(), wait(long)
+	at com.leuros.EurosResultService$_readFile_closure1.doCall(EurosResultService.groovy:65)
+	at com.leuros.EurosResultService.readFile(EurosResultService.groovy:37)
+	at com.leuros.EurosResultServiceTests.testReadFile(EurosResultServiceTests.groovy:15)
+</error>
+  </testcase>
+  <system-out><![CDATA[--Output from testReadFile--
+]]></system-out>
+  <system-err><![CDATA[--Output from testReadFile--
+]]></system-err>
+</testsuite>

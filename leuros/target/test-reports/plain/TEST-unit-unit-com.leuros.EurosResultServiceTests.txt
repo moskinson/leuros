@@ -1,0 +1,19 @@
+Testsuite: com.leuros.EurosResultServiceTests
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 0.534 sec
+------------- Standard Output ---------------
+--Output from testReadFile--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testReadFile--
+------------- ---------------- ---------------
+
+Testcase: testReadFile took 0.325 sec
+	Caused an ERROR
+No signature of method: com.leuros.EurosResult.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), any(), wait(long)
+groovy.lang.MissingMethodException: No signature of method: com.leuros.EurosResult.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), any(), wait(long)
+	at com.leuros.EurosResultService$_readFile_closure1.doCall(EurosResultService.groovy:65)
+	at com.leuros.EurosResultService.readFile(EurosResultService.groovy:37)
+	at com.leuros.EurosResultServiceTests.testReadFile(EurosResultServiceTests.groovy:15)
+
