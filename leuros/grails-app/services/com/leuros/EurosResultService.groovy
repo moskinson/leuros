@@ -6,26 +6,6 @@ class EurosResultService {
 	def List resultadosEuromillon
 
 	
-	
-	def saveOneResult(){
-		def Results = new EurosResult(season :2012,
-			date : '20/11/2011',
-			day : 'Friday',
-			ball1 : 1,
-			ball2 : 2,
-			ball3 : 3,
-			ball4 : 34,
-			ball5 : 4,
-
-			star1 : 5,
-			star2 : 8)
-		Results.save()
-		
-		
-		
-	}
-	
-	
 	def readFile() {
 		def reading = new readFile();
 		resultados = reading.pintaLineas();
@@ -69,4 +49,29 @@ class EurosResultService {
 		}
 
 	}
+	
+	def counts(Integer seasonSearch) {
+		Map collectResults = [:]
+		int value
+		if (seasonSearch == 0){
+		for (i in 1..50){
+			def query = EurosResult.where {
+				ball1 == i || ball2 == i || ball3 == i || ball4 == i || ball5 == i
+			 }
+			 value = query.count()
+			collectResults.put(i, value)
+		}
+		}
+		else {
+			for (i in 1..50){
+				def query = EurosResult.where {
+					season == seasonSearch && (ball1 == i || ball2 == i || ball3 == i || ball4 == i || ball5 == i)
+				 }
+				 value = query.count()
+				collectResults.put(i, value)
+			}
+		}
+		return collectResults
+	}
+	
 }

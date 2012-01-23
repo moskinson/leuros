@@ -105,6 +105,7 @@
 
 			<div id="controller-list" role="navigation">
 				<g:link controller="eurosResult" action="loadData">Load data</g:link>
+				<g:link controller="eurosResult" action="listCounts" params="[season : 0]">List Counts</g:link>
 			</div>
 			<div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>

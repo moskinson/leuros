@@ -9,12 +9,9 @@ class readFile {
 	def pintaLineas() {
 		myFile = new File(myFileDirectory + myFileName)
 		def List lineas = []
-		def printFileLine = { 
-			//system.println("File line: " + it)
-			lineas.add(it)
-		 }
+		def FileLine = { lineas.add(it) }
 		
-		myFile.each( printFileLine )
+		myFile.each( FileLine )
 		return lineas
 	}
 

@@ -24,12 +24,12 @@ class EurosResult {
 	
 	
     static constraints = {
-		ball1(maxSize:50)
-		ball2(maxSize:50)
-		ball3(maxSize:50)
-		ball4(maxSize:50)
-		ball5(maxSize:50)
-		star1(maxSize:10)
-		star2(maxSize:10)
+		ball1(maxSize:50, minSize:1)
+		ball2(maxSize:50, minSize:1)
+		ball3(maxSize:50, minSize:1)
+		ball4(maxSize:50, minSize:1)
+		ball5(maxSize:50, minSize:1)
+		star1(maxSize:11, minSize:1)
+		star2(maxSize:11, minSize:1)
     }
 }

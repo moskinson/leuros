@@ -17,8 +17,8 @@ class EurosResultController {
 		render view: "/eurosResult/list", model: [InstanceResult: EurosResult.all]
 	
    }
-   def listAllResults() {
+   def listCounts() {
 	   
-	   return EurosResult.all
+		render view: "/eurosResult/count", model: [InstanceResult:EurosResultService.counts(params.season.toInteger())]
    }
 } 
